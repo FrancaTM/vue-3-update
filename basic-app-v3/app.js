@@ -10,6 +10,7 @@ const app = Vue.createApp({
 });
 
 app.component("the-button", {
+  emits: ["update"],
   template: '<button @click="updateMessage">Click me</button>',
   methods: {
     updateMessage() {
